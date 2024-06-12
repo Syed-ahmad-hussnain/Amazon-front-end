@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon clone</title> <link rel="stylesheet" href="style.css">
+</head>
+<body id="Home">
+    <header>
+           <div id="nav-bar" >       
+           <a href="index.html" id="amazon-home" 
+           style="color: #FF9900;" >Amazon.<sub>com</sub></a>
+       
+           <a href="Account.html" id="Account" style="color: white;">Account</a>
+       
+           <a href="Cart.html" id="Carts" style="color: white;">My Cart</a>
+       
+           <a href="Contact.html" id="Contact" style="color: white;">Contact us</a>
+       
+           <input type="text" id="search-bar" placeholder="Search Amazon">
+           <button id="search-button">Search</button>
+      </div>
+    </header> 
+    <div id="content">
+        
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    width: 90%;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+                .category {
+                    width: 100%;
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+                .category h2 {
+                    margin-bottom: 20px;
+                }
+                .items {
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                }
+                .item {
+                    flex: 1 1 calc(25% - 20px);
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .item img {
+                    max-width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 10px;
+                }
+                .item p {
+                    margin: 0;
+                }
+                @media (max-width: 900px) {
+                    .item {
+                        flex: 1 1 calc(50% - 20px);
+                    }
+                }
+                @media (max-width: 600px) {
+                    .item {
+                        flex: 1 1 100%;
+                    }
+                }
+                .footer {
+                    background-color: #232F3E;
+                    color: white;
+                    padding: 40px 20px;
+                    margin-top: 40px;
+                }
+                .footer .footer-columns {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                .footer .footer-column {
+                    flex: 1 1 200px;
+                    margin: 20px;
+                }
+                .footer .footer-column h3 {
+                    border-bottom: 1px solid #3a4553;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                }
+                .footer .footer-column ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                .footer .footer-column ul li {
+                    margin-bottom: 10px;
+                }
+                .footer .footer-column ul li a {
+                    color: white;
+                    text-decoration: none;
+                }
+                .footer .footer-bottom {
+                    text-align: center;
+                    margin-top: 20px;
+                    border-top: 1px solid #3a4553;
+                    padding-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <main class="content">
+                <section class="category">
+                    <h2>Gaming accessories</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Headsets">
+                            <p>Headsets</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Keyboards">
+                            <p>Keyboards</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Computer mice">
+                            <p>Computer mice</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Chairs">
+                            <p>Chairs</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Shop deals in Fashion</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Jeans under $50">
+                            <p>Jeans under $50</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Tops under $25">
+                            <p>Tops under $25</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Dresses under $30">
+                            <p>Dresses under $30</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Shoes under $50">
+                            <p>Shoes under $50</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Refresh your space</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Dining">
+                            <p>Dining</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Home">
+                            <p>Home</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Kitchen">
+                            <p>Kitchen</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Health and Beauty">
+                            <p>Health and Beauty</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Deals in PCs</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Gaming PCs">
+                            <p>Gaming PCs</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Laptops">
+                            <p>Laptops</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Amazon Gadget Store</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Smartphones">
+                            <p>Smartphones</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Tablets">
+                            <p>Tablets</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Laptops">
+                            <p>Laptops</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="TVs">
+                            <p>TVs</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Deals on gifts for Dad</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Tech">
+                            <p>Tech</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Adventure gear">
+                            <p>Adventure gear</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Unique finds">
+                            <p>Unique finds</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Health & wellness">
+                            <p>Health & wellness</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Fashion trends you like</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Dresses">
+                            <p>Dresses</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Knits">
+                            <p>Knits</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Jackets">
+                            <p>Jackets</p>
+                        </div>
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Jewelry">
+                            <p>Jewelry</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Toys under $25</h2>
+                    <div class="items">
+                        <div class="item">
+                            <img src="https://via.placeholder.com/150" alt="Toys">
+                            <p>Toys</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="category">
+                    <h2>Beauty steals under $25</h2>
+                    <div class="items">
+                        <div class="item">
+    </div>
+    <footer>
+        <div class="footer-links">
+          <a href="#">About Amazon</a>
+          <a href="#">Careers</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Amazon Devices</a>
+          <a href="#">Amazon Tours</a>
+          <a href="#">Sell on Amazon</a>
+          <a href="#">Sell Under Amazon</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Advertise Your Products</a>
+          <a href="#">Self-Publish with Us</a>
+          <a href="#">Host an Amazon Hub</a>
+          <a href="#">See More</a>
+        </div>
+      </footer>
+</body>
+</html>
